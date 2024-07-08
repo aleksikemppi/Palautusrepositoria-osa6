@@ -26,8 +26,8 @@ const App = () => {
       <div>
         <h1>Anecdote app</h1>
         <Notification />
+        <h2>create new</h2>
         <AnecdoteForm fetchAnecdotes={fetchAnecdotes} />
-        <h2>Anecdotes</h2>
         {anecdotes
           .sort((a, b) => b.votes - a.votes)
           .map((anecdote) => (
